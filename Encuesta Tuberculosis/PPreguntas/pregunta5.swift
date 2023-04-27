@@ -58,7 +58,7 @@ struct pregunta5: View {
                         {
                             print("Dato familiar quinta pregunta")
                         }label: {
-                            NavigationLink("familiar", destination: ContentView())
+                            NavigationLink("familiar", destination: finalParticipacion())
                                 .font(.title.bold())
                                 .frame(width: 150, height: 50)
                                 .foregroundColor(.white)
@@ -74,7 +74,7 @@ struct pregunta5: View {
                         {
                             print("Dato vecino pregunta")
                         }label: {
-                            NavigationLink("Vecino", destination: ContentView())
+                            NavigationLink("Vecino", destination: finalParticipacion())
                                 .font(.title.bold())
                                 .frame(width: 150, height: 50)
                                 .foregroundColor(.white)
@@ -130,7 +130,7 @@ struct pregunta5: View {
                         {
                             print("Dato compañero quinta pregunta")
                         }label: {
-                            NavigationLink("Compañero", destination: ContentView())
+                            NavigationLink("Compañero", destination: finalParticipacion())
                                 .font(.title.bold())
                                 .frame(width: 175, height: 50)
                                 .foregroundColor(.white)
@@ -146,7 +146,7 @@ struct pregunta5: View {
                         {
                             print("Dato otro quinta pregunta")
                         }label: {
-                            NavigationLink("Otro", destination: ContentView())
+                            NavigationLink("Otro", destination: finalParticipacion())
                                 .font(.title.bold())
                                 .frame(width: 150, height: 50)
                                 .foregroundColor(.white)

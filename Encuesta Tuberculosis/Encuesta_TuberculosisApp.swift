@@ -13,8 +13,8 @@ struct Encuesta_TuberculosisApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            //splashScreenView(isActive: Bool())
+            //ContentView()
+            splashScreenView(isActive: Bool())
         }
     }
 }

@@ -70,7 +70,7 @@ struct pregunta1: View {
                                         {
                                             print("Dato igual guardado")
                                         }label: {
-                                            NavigationLink("No", destination: ContentView())
+                                            NavigationLink("No", destination: finalParticipacion())
                                                 .font(.title.bold())
                                                 .frame(width: 150, height: 50)
                                                 .foregroundColor(.white)

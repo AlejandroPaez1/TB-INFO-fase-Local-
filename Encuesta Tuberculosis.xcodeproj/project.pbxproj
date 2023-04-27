@@ -27,6 +27,8 @@
 		0DB8039F29F9E5CB00969D16 /* pregunta2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8039729F9E5CB00969D16 /* pregunta2.swift */; };
 		0DB803A029F9E5CB00969D16 /* pregunta4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8039829F9E5CB00969D16 /* pregunta4.swift */; };
 		0DB803A129F9E5CB00969D16 /* pregunta 2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8039929F9E5CB00969D16 /* pregunta 2.1.swift */; };
+		0DB803A529FA140D00969D16 /* ventanaModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB803A329FA140D00969D16 /* ventanaModal.swift */; };
+		0DB803A629FA140D00969D16 /* finalParticipacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB803A429FA140D00969D16 /* finalParticipacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		0DB8039729F9E5CB00969D16 /* pregunta2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pregunta2.swift; sourceTree = "<group>"; };
 		0DB8039829F9E5CB00969D16 /* pregunta4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pregunta4.swift; sourceTree = "<group>"; };
 		0DB8039929F9E5CB00969D16 /* pregunta 2.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "pregunta 2.1.swift"; sourceTree = "<group>"; };
+		0DB803A329FA140D00969D16 /* ventanaModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ventanaModal.swift; sourceTree = "<group>"; };
+		0DB803A429FA140D00969D16 /* finalParticipacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = finalParticipacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 				0DB8039629F9E5CB00969D16 /* pregunta5.swift */,
 				0DB8039729F9E5CB00969D16 /* pregunta2.swift */,
 				0DB8039829F9E5CB00969D16 /* pregunta4.swift */,
+				0DB803A429FA140D00969D16 /* finalParticipacion.swift */,
+				0DB803A329FA140D00969D16 /* ventanaModal.swift */,
 				0DB8039929F9E5CB00969D16 /* pregunta 2.1.swift */,
 			);
 			path = PPreguntas;
@@ -207,6 +213,7 @@
 				0DB8038C29F9DBD000969D16 /* presentacion4View.swift in Sources */,
 				0DB8039E29F9E5CB00969D16 /* pregunta5.swift in Sources */,
 				0D51334729F9805F00E7F650 /* splashScreenView.swift in Sources */,
+				0DB803A529FA140D00969D16 /* ventanaModal.swift in Sources */,
 				0DB8039F29F9E5CB00969D16 /* pregunta2.swift in Sources */,
 				0DB803A129F9E5CB00969D16 /* pregunta 2.1.swift in Sources */,
 				0DB8039C29F9E5CB00969D16 /* pregunta3.swift in Sources */,
@@ -219,6 +226,7 @@
 				0D51333629F97E7900E7F650 /* ContentView.swift in Sources */,
 				0D51333429F97E7900E7F650 /* Encuesta_TuberculosisApp.swift in Sources */,
 				0DB8038B29F9DBD000969D16 /* presentacion3View.swift in Sources */,
+				0DB803A629FA140D00969D16 /* finalParticipacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

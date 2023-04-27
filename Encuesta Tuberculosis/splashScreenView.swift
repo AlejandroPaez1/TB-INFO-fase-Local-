@@ -31,11 +31,14 @@ struct splashScreenView: View {
                 VStack()
                 {
                     Spacer()
-                    Image("logo")
-                        .foregroundColor(.blue)
-                    Text("Bienvenido Salud Tech")
-                        .font(.headline)
-                        .foregroundColor(.blue.opacity(0.80))
+                    Image("logo 2")
+                        .resizable()
+                        .frame(width: 370, height: 370)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                    
+//                    Text("Bienvenido TB INFO")
+//                        .font(.headline)
+//                        .foregroundColor(.blue.opacity(0.80))
                     Spacer()
                 }
                 .scaleEffect(size)

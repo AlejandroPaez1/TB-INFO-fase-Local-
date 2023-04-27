@@ -12,13 +12,22 @@ struct PantallaSigView: View {
 
     var body: some View {
         ZStack {
-            Color(.white)
-                .opacity(0.3)
+            Color(.blue)
+                .opacity(0)
                 .background(
-                    LinearGradient(gradient: Gradient(colors: [Color.blue, Color.blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
-                        .ignoresSafeArea(edges: .all)
+                    LinearGradient(
+                        gradient: Gradient(
+                            colors: [
+                                Color(red: 27/255, green: 90/255, blue: 164/255),
+                                Color(red: 59/255, green:167/255, blue: 255/255)
+                                
+                            ]
+                        ),
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                    .ignoresSafeArea(edges: .all)
                 )
-            
                 .ignoresSafeArea()
             
             VStack{
