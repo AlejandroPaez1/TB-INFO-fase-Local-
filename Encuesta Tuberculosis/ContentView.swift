@@ -33,10 +33,10 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 
                 VStack(alignment: .center){
-                    Image("logoapp")
-                        .resizable()
-                        .frame(width: 370, height: 160)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
+//                    Image("logoapp")
+//                        .resizable()
+//                        .frame(width: 370, height: 160)
+//                        .clipShape(RoundedRectangle(cornerRadius: 20))
 //                    Text("TB INFO")
 //                        .font(Font.system(size: 65).bold())
 //                        .foregroundColor(Color.white)

@@ -11,6 +11,7 @@ struct PantallaSigView: View {
     @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
+        
         ZStack {
             Color(.blue)
                 .opacity(0)
@@ -30,19 +31,34 @@ struct PantallaSigView: View {
                 )
                 .ignoresSafeArea()
             
+            
+
             VStack{
-                Text("Encuesta")
                 
+                
+                Text("Encuesta registradas")
+                    .foregroundColor(.white)
+                    .modifier(Parrafo())
+                   
+                
+    
+         
+                Rectangle()
+                    .fill(Color.white)
+                //                        .frame(width: 780, height: 1000)
+                    .frame(minWidth: 100, idealWidth: 1100, maxWidth: 780, minHeight: 600, idealHeight: 780, maxHeight: 1100)
+                
+                    .cornerRadius(50)
+                    .padding(.horizontal, 14.0)
+                    .padding(.vertical, 14.0)
                     .navigationBarBackButtonHidden(true) // Ocultar el botón de regreso
                     .navigationBarItems(leading: backButton) // Agregar un botón personalizado
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             }
             
             
             
             
-     
+            
         }.background(
             LinearGradient(gradient: Gradient(colors: [Color.blue, Color.blue.opacity(0.6)]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
@@ -58,7 +74,7 @@ struct PantallaSigView: View {
 
             Image(systemName: "arrow.backward")
                 .foregroundColor(.white) // Color del botón personalizado
-            Text("regresar")
+            Text("Regresar")
                 .foregroundColor(.white) // Color del botón personalizado
 
         }

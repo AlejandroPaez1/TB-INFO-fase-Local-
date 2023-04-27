@@ -15,12 +15,10 @@ struct pregunta3: View {
             {
                 Text("¿Sufre de sudor por las noches? ")
                     .font(.largeTitle)
-                
-                VStack(spacing: 250)
-                {
+   
                     Image("preg3")
-                }.padding(.top, 100.0)
-                
+                    .resizable()
+                    .frame(minWidth: 1500, idealWidth: 300, maxWidth: 200, minHeight: 150, idealHeight: 700, maxHeight: 750, alignment: .center)
                 ZStack()
                 {
                     Rectangle()

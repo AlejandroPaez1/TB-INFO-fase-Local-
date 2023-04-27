@@ -14,20 +14,16 @@ struct pregunta1: View {
         {
             VStack()
             {
-//                TabView {
-//                    pregunta2()
-//                    pregunta3()
-//                    pregunta4()
-//                }.tabViewStyle(PageTabViewStyle())
-//
-                
+
                                 Text("¿En tu casa hay alguien que tiene tos con flemas? ")
                                     .font(.largeTitle)
                 
-                                VStack(spacing: 250)
-                                {
+//                                VStack(spacing: 250){
                                     Image("preg1")
-                                }.padding(.top, 100.0)
+                    .resizable()
+                    .frame(minWidth: 1500, idealWidth: 300, maxWidth: 200, minHeight: 150, idealHeight: 700, maxHeight: 750, alignment: .center)
+                Spacer()
+//                                }.padding(.top, 100.0)
                 
                                 ZStack()
                                 {

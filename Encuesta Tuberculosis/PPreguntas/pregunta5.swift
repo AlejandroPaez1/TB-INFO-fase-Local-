@@ -18,7 +18,7 @@ struct pregunta5: View {
                 
                 HStack()
                 {
-                    HStack(spacing: -100)
+                    HStack()
                     {
                         Image("preg5-1")
                             .resizable()
@@ -90,7 +90,7 @@ struct pregunta5: View {
                  
                 HStack()
                 {
-                    HStack(spacing: -100)
+                    HStack()
                     {
                         Image("preg5-3")
                             .resizable()
@@ -161,6 +161,7 @@ struct pregunta5: View {
 
                 
             }
+            .frame(minWidth: 1500, idealWidth: 300, maxWidth: 200, minHeight: 150, idealHeight: 700, maxHeight: 750, alignment: .center)
             .navigationTitle("Pregunta 6")
 
         

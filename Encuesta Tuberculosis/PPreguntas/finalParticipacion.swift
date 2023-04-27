@@ -14,6 +14,7 @@ struct finalParticipacion: View {
     @State var domicilio: String = ""
     @State var telefono: String = ""
     @State  var show = false
+
     
     var body: some View {
         NavigationView{
@@ -63,7 +64,7 @@ struct finalParticipacion: View {
                         
                         
                         TextField("Edad", text: $edad)
-                            .keyboardType(.default)
+                            .keyboardType(.numberPad)
                             .disableAutocorrection(true)
                             .padding(20)
                             .font(.headline)
@@ -74,6 +75,9 @@ struct finalParticipacion: View {
                         
                         TextField("Domicilio", text: $domicilio)
                             .keyboardType(.default)
+                            .onChange(of: edad) { newValue in
+                                edad = String(newValue.filter { "0123456789".contains($0) })
+                            }
                             .disableAutocorrection(true)
                             .padding(20)
                             .font(.headline)
@@ -83,7 +87,10 @@ struct finalParticipacion: View {
                             .padding(.top, 40)
                         
                         TextField("Telefono", text: $telefono)
-                            .keyboardType(.namePhonePad)
+                            .onChange(of: telefono) { newValue in
+                                telefono = String(newValue.filter { "0123456789".contains($0) })
+                            }
+                            .keyboardType(.numberPad)
                             .disableAutocorrection(true)
                             .padding(20)
                             .font(.headline)
@@ -118,6 +125,8 @@ struct finalParticipacion: View {
                     }
                     
                 }
+                .padding(.top, 100.0)
+
                 
             }
             

@@ -29,7 +29,7 @@ struct PresentacionView: View {
                                 endPoint: .bottom
                             )
                         )
-                    
+    
 //                        .frame(width: 780, height: 1000)
                         .frame(minWidth: 780, idealWidth: 1100, maxWidth: 780, minHeight: 780, idealHeight: 780, maxHeight: 1100, alignment: .center)
                         .cornerRadius(50)
