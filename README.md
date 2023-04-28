@@ -1,12 +1,14 @@
 # Proyecto TB info fase local Hackaton 2023
 
 Este proyecto tiene como objetivo ayudar a identificar si una persona podría estar infectada con tuberculosis. Incluye información sobre la enfermedad y una encuesta que se puede completar para saber si una persona debe buscar atención médica.
+![pantalla principal](pantallaPrincipal.png)
 
 ## Tabla de contenido
 
 - [Información sobre la tuberculosis](#información-sobre-la-tuberculosis)
 - [Encuesta de Tuberculosis](#encuesta-de-tuberculosis)
 
+![pantalla presentacion](presentacion.png)
 
 ## Información sobre la tuberculosis
 
