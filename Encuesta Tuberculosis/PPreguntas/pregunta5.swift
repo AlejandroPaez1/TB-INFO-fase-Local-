@@ -61,7 +61,7 @@ struct pregunta5: View {
                     {
                         Button()
                         {
-                            print("Dato familiar quinta pregunta")
+                            print("Dato familiar sexta pregunta")
                         }label: {
                             NavigationLink("Familiar", destination: finalParticipacion())
                                 .font(.title.bold())

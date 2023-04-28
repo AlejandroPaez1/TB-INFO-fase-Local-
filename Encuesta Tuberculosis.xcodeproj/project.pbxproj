@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D394EC629FC46AD0092906C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D394EC529FC46AD0092906C /* SwiftUIView.swift */; };
 		0D51333429F97E7900E7F650 /* Encuesta_TuberculosisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51333329F97E7900E7F650 /* Encuesta_TuberculosisApp.swift */; };
 		0D51333629F97E7900E7F650 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D51333529F97E7900E7F650 /* ContentView.swift */; };
 		0D51333829F97E7A00E7F650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D51333729F97E7A00E7F650 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D394EC529FC46AD0092906C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		0D51333029F97E7900E7F650 /* Encuesta Tuberculosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Encuesta Tuberculosis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D51333329F97E7900E7F650 /* Encuesta_TuberculosisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encuesta_TuberculosisApp.swift; sourceTree = "<group>"; };
 		0D51333529F97E7900E7F650 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				0D51333E29F97E7A00E7F650 /* Encuesta_Tuberculosis.xcdatamodeld */,
 				0D51333929F97E7A00E7F650 /* Preview Content */,
 				0D51334629F9805F00E7F650 /* splashScreenView.swift */,
+				0D394EC529FC46AD0092906C /* SwiftUIView.swift */,
 			);
 			path = "Encuesta Tuberculosis";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0D51334729F9805F00E7F650 /* splashScreenView.swift in Sources */,
 				0DB803A529FA140D00969D16 /* ventanaModal.swift in Sources */,
 				0DB8039F29F9E5CB00969D16 /* pregunta2.swift in Sources */,
+				0D394EC629FC46AD0092906C /* SwiftUIView.swift in Sources */,
 				0DB803A129F9E5CB00969D16 /* pregunta 2.1.swift in Sources */,
 				0DB8039C29F9E5CB00969D16 /* pregunta3.swift in Sources */,
 				0D51334029F97E7A00E7F650 /* Encuesta_Tuberculosis.xcdatamodeld in Sources */,
