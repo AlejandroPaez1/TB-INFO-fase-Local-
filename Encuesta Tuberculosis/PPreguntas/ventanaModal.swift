@@ -20,6 +20,8 @@ struct ventanaModal: View {
         
         VStack {
             Text("Registro guardado correctamente")
+                .font(.largeTitle.bold())
+            
             
             Button("Regresar al inicio") {
                 isFullScreen = true

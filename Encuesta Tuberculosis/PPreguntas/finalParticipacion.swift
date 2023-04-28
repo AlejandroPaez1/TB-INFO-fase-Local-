@@ -64,6 +64,9 @@ struct finalParticipacion: View {
                         
                         
                         TextField("Edad", text: $edad)
+                            .onChange(of: edad) { newValue in
+                                edad = String(newValue.filter { "0123456789".contains($0) })
+                            }
                             .keyboardType(.numberPad)
                             .disableAutocorrection(true)
                             .padding(20)
@@ -75,9 +78,6 @@ struct finalParticipacion: View {
                         
                         TextField("Domicilio", text: $domicilio)
                             .keyboardType(.default)
-                            .onChange(of: edad) { newValue in
-                                edad = String(newValue.filter { "0123456789".contains($0) })
-                            }
                             .disableAutocorrection(true)
                             .padding(20)
                             .font(.headline)

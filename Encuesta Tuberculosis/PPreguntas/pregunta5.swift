@@ -7,6 +7,11 @@
 import SwiftUI
 
 struct pregunta5: View {
+    
+    @State var otro: String = ""
+    @State var offset: CGFloat = 0
+    @State private var isMoved = false
+
     var body: some View {
         
         
@@ -58,7 +63,7 @@ struct pregunta5: View {
                         {
                             print("Dato familiar quinta pregunta")
                         }label: {
-                            NavigationLink("familiar", destination: finalParticipacion())
+                            NavigationLink("Familiar", destination: finalParticipacion())
                                 .font(.title.bold())
                                 .frame(width: 150, height: 50)
                                 .foregroundColor(.white)
@@ -123,7 +128,7 @@ struct pregunta5: View {
                         .frame(width: 780, height:150)
                         .cornerRadius(50)
                     
-                    HStack(spacing: 150)
+                    HStack(spacing: 60)
                     {
                         
                         Button()
@@ -141,26 +146,50 @@ struct pregunta5: View {
                         }
                         .padding(10)
                         
-                        
-                        Button()
-                        {
-                            print("Dato otro quinta pregunta")
-                        }label: {
-                            NavigationLink("Otro", destination: finalParticipacion())
-                                .font(.title.bold())
-                                .frame(width: 150, height: 50)
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(.green)
+                        HStack{
+                            TextField("Otro", text: $otro)
+                                .frame(width: 200,height: 75)
+                                .keyboardType(.default)
+                                .disableAutocorrection(true)
+                                .font(.title)
+                                .background(Color.white.opacity(1))
                                 .cornerRadius(35)
-                        }
-                        .padding(10)
+                                //.offset(y: offset)
                         
+                                    .onTapGesture {
+                                        if isMoved {
+                                            offset = 9
+                                        } else {
+                                            offset = -UIScreen.main.bounds.height / 9
+                                        }
+                                        isMoved.toggle()
+                                    }
+                            
+                            Button()
+                            {
+                                print("Enviar")
+                            }label: {
+                                NavigationLink("enviar", destination: finalParticipacion())
+                                    .font(.title.bold())
+                                    .frame(width: 150, height: 50)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(.green)
+                                    .cornerRadius(35)
+                            }
+                            .padding(10)
+                        }
+              
                     }
                 }
 
                 
             }
+
+            .offset(y: offset)
+            .animation(.spring())
+        
+        
             .frame(minWidth: 1500, idealWidth: 300, maxWidth: 200, minHeight: 150, idealHeight: 700, maxHeight: 750, alignment: .center)
             .navigationTitle("Pregunta 6")
 
